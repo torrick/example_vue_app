@@ -35,7 +35,7 @@ jobs:
         cd dist
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        git add .
+        git add . -f
         git commit -m "Committing build artifacts"
     - name: Push Changes
       uses: ad-m/github-push-action@master
