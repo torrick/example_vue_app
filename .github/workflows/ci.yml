@@ -33,9 +33,9 @@ jobs:
     - name: Commit build files
       run: |
         cd dist
+        git init
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        git init
         git add -A
         git commit -m "Committing build artifacts"
     - name: Push Changes
